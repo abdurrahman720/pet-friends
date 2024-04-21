@@ -13,6 +13,7 @@ import BlogCard from "./Blog/BlogCard";
 import blog1 from "/public/assets/images/blog/1.jpg";
 import blog2 from "/public/assets/images/blog/2.jpg";
 import blog3 from "/public/assets/images/blog/3.jpg";
+import Review from "./Review/Review";
 
 type Props = {};
 
@@ -73,7 +74,7 @@ const Landing = (props: Props) => {
           heading="Meet our wonderful team "
           subHeading="Lorem ipsum dolor sit amet, est vide voluptaria ex, nec in hinc solum sat. Neceessitatibus sonet soluta, vim eu esse accusamus. "
         />
-        <div className="grid grid-cols-1 tabletXL:grid-cols-2 laptop:grid-cols-3">
+        <div className="grid grid-cols-1 tabletXL:grid-cols-2 laptop:grid-cols-3 gap-3">
           <Team
             name="Sophia Lane"
             img={sophia}
@@ -91,6 +92,9 @@ const Landing = (props: Props) => {
           />
         </div>
       </ComponentLayout>
+      <div className="mobile:pt-10 tabletXL:pt-16 laptop:pt-20 desktop:pt-20">
+        <Review />
+      </div>
     </div>
   );
 };

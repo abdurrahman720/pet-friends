@@ -9,7 +9,7 @@ type Props = {
 
 const Team = ({ name, img, designation }: Props) => {
   return (
-    <div className="w-[400px] relative group">
+    <div className="w-full relative group">
       <Image
         src={img}
         alt={name}
