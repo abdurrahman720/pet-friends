@@ -3,7 +3,8 @@ import { Inter,Nunito } from "next/font/google";
 import "./globals.css";
 import Header from "./Components/Common/Header/Header";
 import Footer from "./Components/Common/Footer/Footer";
-import Layout from "./(site)/_layout";
+import MainLayout from "./(site)/MainLayout";
+
 
 const font = Nunito({weight:"800",subsets: ["latin"] });
 
@@ -26,9 +27,9 @@ export default function RootLayout({
         />
       </head>
       <body className={font.className}>
-        <Layout>
+        <MainLayout>
           {children}
-       </Layout>
+       </MainLayout>
       </body>
     </html>
   );

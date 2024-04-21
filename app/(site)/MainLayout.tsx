@@ -8,7 +8,7 @@ type Props = {
   children: ReactNode;
 };
 
-const Layout = ({ type, children }: Props) => {
+const MainLayout = ({ type, children }: Props) => {
   return (
     <div>
       <Header/>
@@ -18,4 +18,4 @@ const Layout = ({ type, children }: Props) => {
   );  
 };
 
-export default Layout;
+export default MainLayout;

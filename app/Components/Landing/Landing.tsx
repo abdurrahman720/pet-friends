@@ -9,6 +9,10 @@ import sophia from "/public/assets/images/team/sophia.jpg";
 import george from "/public/assets/images/team/george.jpg";
 import hannah from "/public/assets/images/team/hannah.jpg";
 import Gallery from "./Gallery/Gallery";
+import BlogCard from "./Blog/BlogCard";
+import blog1 from "/public/assets/images/blog/1.jpg";
+import blog2 from "/public/assets/images/blog/2.jpg";
+import blog3 from "/public/assets/images/blog/3.jpg";
 
 type Props = {};
 
@@ -37,6 +41,33 @@ const Landing = (props: Props) => {
           <ProductCard name="Mouse bell" rating={4} img={dog} price={58} />
         </div>
       </ComponentLayout>
+
+      <div className="mobile:pt-10 tabletXL:pt-16 laptop:pt-20 desktop:pt-20 px-3">
+        <Gallery />
+      </div>
+      <ComponentLayout>
+        <SectionHeader
+          heading="Read the latest blog posts"
+          subHeading="Lorem ipsum dolor sit amet, est vide voluptaria ex, nec in hinc solum sat. Neceessitatibus sonet soluta, vim eu esse accusamus. "
+        />
+        <div className="grid grid-cols-1 tabletXL:grid-cols-2 laptop:grid-cols-3">
+          <BlogCard
+            title="Understanding The Five Senses of Your Dog"
+            description="Te feugiat recteque eloquentiam est. Sed at audire ornatus incorrupte, mel ferri bonorum deserunt te. Accusata postulant mei"
+            img={blog1}
+          />
+          <BlogCard
+            title="How Can You Tell if Dogs are Playing or Fighting?"
+            description="Te feugiat recteque eloquentiam est. Sed at audire ornatus incorrupte, mel ferri bonorum deserunt te. Accusata postulant mei"
+            img={blog2}
+          />
+          <BlogCard
+            title="7 Surprising Ways that Dogs Show Affection"
+            description="Te feugiat recteque eloquentiam est. Sed at audire ornatus incorrupte, mel ferri bonorum deserunt te. Accusata postulant mei"
+            img={blog3}
+          />
+        </div>
+      </ComponentLayout>
       <ComponentLayout>
         <SectionHeader
           heading="Meet our wonderful team "
@@ -60,9 +91,6 @@ const Landing = (props: Props) => {
           />
         </div>
       </ComponentLayout>
-      <div className="mobile:pt-10 tabletXL:pt-16 laptop:pt-20 desktop:pt-20">
-        <Gallery />
-      </div>
     </div>
   );
 };
