@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Inter,Nunito } from "next/font/google";
 import "./globals.css";
+import Header from "./Components/Common/Header/Header";
+import Footer from "./Components/Common/Footer/Footer";
+import Layout from "./(site)/_layout";
 
 const font = Nunito({weight:"800",subsets: ["latin"] });
 
@@ -22,7 +25,11 @@ export default function RootLayout({
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         />
       </head>
-      <body className={font.className}>{children}</body>
+      <body className={font.className}>
+        <Layout>
+          {children}
+       </Layout>
+      </body>
     </html>
   );
 }
