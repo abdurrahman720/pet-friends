@@ -1,21 +1,21 @@
-import React from 'react'
-import ReviewCarousel from './ReviewCarousel'
-import Image from 'next/image'
-import reviewImg from '/public/assets/images/review.jpg'
+import React from "react";
+import ReviewCarousel from "./ReviewCarousel";
+import Image from "next/image";
+import reviewImg from "/public/assets/images/review.jpg";
 
-type Props = {}
+type Props = {};
 
 const Review = (props: Props) => {
   return (
     <div className="flex flex-col tabletXL:flex-row justify-center w-full">
-      <div className='flex-1'>
+      <div className="flex-1">
         <ReviewCarousel />
       </div>
-      <div className="flex-1 relative w-full h-[400px]">
+      <div className="flex-1 relative w-full h-104">
         <Image src={reviewImg} fill alt="review" />
       </div>
     </div>
   );
-}
+};
 
-export default Review
+export default Review;

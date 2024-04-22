@@ -4,17 +4,19 @@ import Card from "./Services/Card";
 import SectionHeader from "./SectionHeader";
 import ProductCard from "./Product/ProductCard";
 import dog from "/public/assets/images/dog.jpg";
-import Team from "./Team/Team";
+import Team from "../Common/Team/Team";
 import sophia from "/public/assets/images/team/sophia.jpg";
 import george from "/public/assets/images/team/george.jpg";
 import hannah from "/public/assets/images/team/hannah.jpg";
 import Gallery from "./Gallery/Gallery";
-import BlogCard from "./Blog/BlogCard";
+import BlogCard from "../Common/Blog/BlogCard";
 import blog1 from "/public/assets/images/blog/1.jpg";
 import blog2 from "/public/assets/images/blog/2.jpg";
 import blog3 from "/public/assets/images/blog/3.jpg";
 import Review from "./Review/Review";
 import About from "./About/About";
+import BlogBanner from "./BlogBanner/BlogBanner";
+import BlogEverything from "./Blog_Everything/BlogEverything";
 
 type Props = {};
 
@@ -43,7 +45,12 @@ const Landing = (props: Props) => {
           <ProductCard name="Mouse bell" rating={4} img={dog} price={58} />
         </div>
       </ComponentLayout>
-
+      <div className="mobile:pt-10 tabletXL:pt-16 laptop:pt-20 desktop:pt-20 ">
+        <BlogBanner />
+      </div>
+      <ComponentLayout>
+        <BlogEverything />
+      </ComponentLayout>
       <div className="mobile:pt-10 tabletXL:pt-16 laptop:pt-20 desktop:pt-20 px-3">
         <Gallery />
       </div>
@@ -96,7 +103,6 @@ const Landing = (props: Props) => {
           />
         </div>
       </ComponentLayout>
-
       <ComponentLayout>
         <About />
       </ComponentLayout>
