@@ -14,6 +14,7 @@ import blog1 from "/public/assets/images/blog/1.jpg";
 import blog2 from "/public/assets/images/blog/2.jpg";
 import blog3 from "/public/assets/images/blog/3.jpg";
 import Review from "./Review/Review";
+import About from "./About/About";
 
 type Props = {};
 
@@ -69,6 +70,9 @@ const Landing = (props: Props) => {
           />
         </div>
       </ComponentLayout>
+      <div className="mobile:pt-10 tabletXL:pt-16 laptop:pt-20 desktop:pt-20">
+        <Review />
+      </div>
       <ComponentLayout>
         <SectionHeader
           heading="Meet our wonderful team "
@@ -92,9 +96,10 @@ const Landing = (props: Props) => {
           />
         </div>
       </ComponentLayout>
-      <div className="mobile:pt-10 tabletXL:pt-16 laptop:pt-20 desktop:pt-20">
-        <Review />
-      </div>
+
+      <ComponentLayout>
+        <About />
+      </ComponentLayout>
     </div>
   );
 };

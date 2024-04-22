@@ -78,7 +78,7 @@ const Footer = (props: Props) => {
   return (
     <div className="">
       <ComponentLayout>
-        <div className=" grid grid-cols-2  laptop:grid-cols-4 gap-2 tablet:gap-16  place-items-center tablet:place-items-start">
+        <div className=" grid grid-cols-2  laptop:grid-cols-4 gap-2 tablet:gap-16  place-items-center tablet:place-items-start mb-10 tabletXL:mb-28">
           <div className="col-span-2 tablet:col-span-1 laptop:col-span-1">
             <div className="w-full tablet:w-3/4 flex flex-col justify-center items-center tablet:justify-start tablet:items-start gap-5">
               <h2 className="text-4xl text-primary font-bold">Pet Friends</h2>
@@ -87,7 +87,7 @@ const Footer = (props: Props) => {
                 sure to be your new best friend.
               </p>
 
-              <div className="mt-6 tablet:mt-8 flex">
+              <div className=" flex">
                 <i className="fa-brands fa-facebook-f bg-secondary p-2 rounded-full  text-primary text-[20px]  mr-3"></i>
                 <i className="fa-brands fa-x-twitter bg-secondary p-2 rounded-full  text-primary text-[20px]  mr-3"></i>
                 <i className="fa-brands fa-instagram bg-secondary p-2 rounded-full  text-primary text-[20px]  mr-3"></i>
