@@ -21,6 +21,9 @@ import BlogEverything from "./Blog_Everything/BlogEverything";
 type Props = {};
 
 const Landing = (props: Props) => {
+ const arr = Array.from(Array(6).keys());
+ 
+
   return (
     <div className="w-full h-fit">
       <ComponentLayout>
@@ -37,12 +40,11 @@ const Landing = (props: Props) => {
         />
 
         <div className="grid grid-cols-1 tablet:grid-cols-2 tabletXL:grid-cols-2 laptop:grid-cols-4 gap-5">
-          <ProductCard name="Mouse bell" rating={4} img={dog} price={58} />
-          <ProductCard name="Mouse bell" rating={4} img={dog} price={58} />
-          <ProductCard name="Mouse bell" rating={4} img={dog} price={58} />
-          <ProductCard name="Mouse bell" rating={4} img={dog} price={58} />
-          <ProductCard name="Mouse bell" rating={4} img={dog} price={58} />
-          <ProductCard name="Mouse bell" rating={4} img={dog} price={58} />
+          {
+            arr.map((index) => (
+              <ProductCard key={index} name ="Party Hat" img={dog} price={58} rating={4}/>
+            ))
+         }
         </div>
       </ComponentLayout>
       <div className="mobile:pt-10 tabletXL:pt-16 laptop:pt-20 desktop:pt-20 ">

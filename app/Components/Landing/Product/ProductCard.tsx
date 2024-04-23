@@ -3,9 +3,9 @@ import React from "react";
 import Image, { StaticImageData } from "next/image";
 
 type Props = {
-  name?: string;
-  price?: number;
-  rating?: number;
+  name: string;
+  price: number;
+  rating: number;
   img: string | StaticImageData;
 };
 

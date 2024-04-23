@@ -7,3 +7,21 @@
   background: rgb(230, 10, 10);
   color: white
 }
+
+@layer components {
+  .text-h1{
+    @apply text-xl tablet:text-2xl tabletXL:text-4xl laptop:text-6xl
+  }
+
+  .text-h2{
+    @apply text-lg tablet:text-xl tabletXL:text-3xl laptop:text-5xl
+  }
+
+  .text-h3{
+    @apply text-base tablet:text-lg tabletXL:text-2xl laptop:text-4xl
+  }
+  .text-h4{
+    @apply text-base tablet:text-lg tabletXL:text-xl laptop:text-2xl
+  }
+  
+}
