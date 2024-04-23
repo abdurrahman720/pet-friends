@@ -19,10 +19,15 @@ const Card = ({ title, description, image }: Props) => {
         className="flex-1"
       />
       <div className="flex flex-col justify-center items-center h-full ">
-        <h3 className="text-4xl text-tprimary group-hover:text-primary bg-transparent group-hover:bg-white  transition duration-300 ease-in group-hover:ease-in-out group-hover:scale-125 p-2 ">
+        <h3 className="text-4xl text-tprimary group-hover:text-primary relative z-10">
           Cat Care
+          <div
+            className="bg-white w-full h-full absolute top-0 left-1/2 -translate-x-1/2  -z-10 opacity-0 group-hover:opacity-100
+          group-hover:animate-spread_full"
+          ></div>
         </h3>
-        <p className="text-base text-tsecondary font-sans font-extralight group-hover:translate-y-2 transition">
+
+        <p className="text-base text-tsecondary font-sans font-extralight ">
           From nutrition to health care. <br /> Everything in one place.
         </p>
       </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import cat from "/public/assets/images/cat.jpg";
 import Image from "next/image";
+import Link from "next/link";
 
 type Props = {
   title: string;
@@ -21,10 +22,10 @@ const SingleBlog = ({ title, description }: Props) => {
         <p className="font-sans font-light text-tsecondary">
           {description || "description"}
         </p>
-        <div className="flex items-center justify-center gap-2 hover:cursor-pointer hover:scale-105 transition-transform">
+        <Link href={'#'} className="flex items-center justify-center gap-2  hover:scale-105 transition-transform">
           <h4 className="text-2xl text-primary">Read More</h4>
           <i className="fa-solid fa-paw text-primary rotate-90 mt-1"></i>
-        </div>
+        </Link>
       </div>
     </div>
   );
