@@ -56,9 +56,9 @@ const config: Config = {
       },
     },
     screens: {
-      mobile: "0px",
-      tablet: "680px",
-      tabletXL: "768px",
+      mobile: "428px",
+      tablet: "768px",
+      tabletXL: "820px",
       laptop: "1024px",
       desktop: "1200px",
       desktopXL: "1400px",

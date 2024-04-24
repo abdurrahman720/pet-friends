@@ -7,12 +7,14 @@ type Props = {};
 
 const Review = (props: Props) => {
   return (
-    <div className="flex flex-col tabletXL:flex-row justify-center w-full">
-      <div className="flex-1">
+    <div className="flex flex-col tabletXL:flex-row justify-center w-full h-full">
+      <div className="flex-1 h-104">
         <ReviewCarousel />
       </div>
-      <div className="flex-1 relative w-full h-104">
-        <Image src={reviewImg} fill alt="review" />
+      <div className="tabletXL:flex-1 h-64 tablet:h-104 ">
+        <div className="relative h-full w-full">
+          <Image src={reviewImg} fill alt="review" className=" " />
+        </div>
       </div>
     </div>
   );

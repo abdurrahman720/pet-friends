@@ -33,7 +33,7 @@ const Header = (props: Props) => {
   ];
 
   return (
-    <div className="bg-white flex justify-between items-center p-8 border border-b-gray-300 sticky top-0 z-30">
+    <div className=" bg-white flex justify-between items-center p-8 border border-b-gray-300 sticky top-0 z-30">
       <div className="flex justify-center items-center  gap-5">
         <Link href="/">
           <h2 className="text-4xl text-primary font-bold">Pet Friends</h2>

@@ -11,7 +11,7 @@ type Props = {
 const MainLayout = ({ type, children }: Props) => {
   return (
     <div>
-      <Header/>
+      {/* <Header/> */}
       <div>{children}</div>
       <Footer />
     </div>

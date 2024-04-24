@@ -27,7 +27,7 @@ const Landing = (props: Props) => {
   return (
     <div className="w-full h-fit">
       <ComponentLayout>
-        <div className="flex flex-col items-center justify-center tablet:flex-row gap-4">
+        <div className="flex flex-col items-center justify-center laptop:flex-row gap-4">
           <Card />
           <Card />
           <Card />
@@ -35,7 +35,7 @@ const Landing = (props: Props) => {
       </ComponentLayout>
       <ComponentLayout>
         <SectionHeader
-          heading="Read the latest blog posts "
+          heading="Popular Products "
           subHeading="Lorem ipsum dolor sit amet, est vide voluptaria ex, nec in hinc solum sat. Neceessitatibus sonet soluta, vim eu esse accusamus. "
         />
 
@@ -61,7 +61,7 @@ const Landing = (props: Props) => {
           heading="Read the latest blog posts"
           subHeading="Lorem ipsum dolor sit amet, est vide voluptaria ex, nec in hinc solum sat. Neceessitatibus sonet soluta, vim eu esse accusamus. "
         />
-        <div className="grid grid-cols-1 tabletXL:grid-cols-2 laptop:grid-cols-3">
+        <div className="grid grid-cols-1 tabletXL:grid-cols-2 laptop:grid-cols-3 gap-5">
           <BlogCard
             title="Understanding The Five Senses of Your Dog"
             description="Te feugiat recteque eloquentiam est. Sed at audire ornatus incorrupte, mel ferri bonorum deserunt te. Accusata postulant mei"
@@ -87,7 +87,7 @@ const Landing = (props: Props) => {
           heading="Meet our wonderful team "
           subHeading="Lorem ipsum dolor sit amet, est vide voluptaria ex, nec in hinc solum sat. Neceessitatibus sonet soluta, vim eu esse accusamus. "
         />
-        <div className="grid grid-cols-1 tabletXL:grid-cols-2 laptop:grid-cols-3 gap-3">
+        <div className="grid grid-cols-1  laptop:grid-cols-3 gap-3">
           <Team
             name="Sophia Lane"
             img={sophia}

@@ -7,13 +7,13 @@ type Props = {};
 
 const BlogBanner = (props: Props) => {
   return (
-    <div className="flex flex-col tabletXL:flex-row justify-center w-full">
-      <div className="flex-1 ">
+    <div className="flex flex-col tabletXL:flex-row justify-center w-full h-full">
+      <div className="tabletXL:flex-1 h-64 tablet:h-104 ">
         <div className="relative h-full w-full">
-          <Image src={blogVideo} fill alt="review" />
+          <Image src={blogVideo} fill alt="review" className=" " />
         </div>
       </div>
-      <div className="flex-1 relative w-full h-104">
+      <div className="flex-1 ">
         <BannerText />
       </div>
     </div>
