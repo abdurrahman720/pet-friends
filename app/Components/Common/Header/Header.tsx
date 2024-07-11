@@ -12,12 +12,12 @@ const Header = (props: Props) => {
     },
     {
       label: "Pages",
-      path: "/about",
+      path: "/veterinary-home",
       icon: "fa-solid fa-caret-down",
     },
     {
       label: "Shop",
-      path: "/services",
+      path: "/pet-shop",
       icon: "fa-solid fa-caret-down",
     },
     {
@@ -33,9 +33,11 @@ const Header = (props: Props) => {
   ];
 
   return (
-    <div className="bg-white flex justify-between items-center p-8 border border-b-gray-300 sticky top-0 z-10">
+    <div className=" bg-white flex justify-between items-center p-8 border border-b-gray-300 sticky top-0 z-30">
       <div className="flex justify-center items-center  gap-5">
-        <h2 className="text-4xl text-primary font-bold">Pet Friends</h2>
+        <Link href="/">
+          <h2 className="text-4xl text-primary font-bold">Pet Friends</h2>
+        </Link>
         {navLinks.map((item, i) => (
           <Link
             href={item.path}

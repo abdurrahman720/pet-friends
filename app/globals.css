@@ -2,7 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+
 ::selection {
   background: rgb(230, 10, 10);
   color: white
+}
+
+@layer components {
+  .text-h1{
+    @apply text-5xl tablet:text-6xl
+  }
+
+  .text-h2{
+    @apply text-4xl tablet:text-5xl
+  }
+
+  .text-h3{
+    @apply text-3xl tablet:text-4xl
+  }
+  .text-h4{
+    @apply text-2xl tablet:text-3xl
+  }
+
+  .text-p{
+     @apply text-base mobile:text-lg
+  }
+  
 }

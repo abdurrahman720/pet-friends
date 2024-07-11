@@ -8,6 +8,45 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      animation: {
+        fill: "fill 0.5s ease-in-out alternate",
+        spread_70: "spread_70 0.5s ease-in-out alternate",
+        spread_full: "spread_full 0.5s ease-in-out alternate",
+      },
+      keyframes: {
+        fill: {
+          "0%": {
+            transform: "scale(.8)",
+          },
+
+          "100%": {
+            transform: "scale(1)",
+          },
+        },
+        spread_full: {
+          "0%": {
+            width: "0%",
+          },
+
+          "100%": {
+            width: "100%",
+          },
+        },
+        spread_70: {
+          "0%": {
+            width: "0%",
+          },
+
+          "100%": {
+            width: "70%",
+          },
+        },
+      },
+
+      spacing: {
+        "100": "28rem",
+        "104": "32rem",
+      },
       colors: {
         primary: "#f14235",
         secondary: "#f8f8f8",
@@ -17,12 +56,12 @@ const config: Config = {
       },
     },
     screens: {
-      mobile: "0px",
-      tablet: "481px",
-      tabletXL: "768px",
+      mobile: "428px",
+      tablet: "768px",
+      tabletXL: "820px",
       laptop: "1024px",
-      desktop: "1280px",
-      desktopXL: "1440px",
+      desktop: "1200px",
+      desktopXL: "1400px",
     },
   },
   plugins: [],

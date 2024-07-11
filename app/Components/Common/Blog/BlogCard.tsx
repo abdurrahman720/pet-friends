@@ -11,7 +11,7 @@ const BlogCard = ({title,description,img}: Props) => {
    return (
      <div className="flex flex-col  gap-4 group mb-5">
        <div
-         className="bg-neutral w-[300px] h-[325px] tablet:w-[400px] flex items-center justify-center relative rounded-md
+         className="bg-neutral w-full h-[325px]  flex items-center justify-center relative rounded-md
        translate-x-0 hover:translate-x-1 transition-transform hover:cursor-pointer"
        >
          <Image src={img} alt="dog" fill className="rounded-md " />

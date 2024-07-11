@@ -4,7 +4,7 @@ type Props = {}
 
 const ReviewCarousel = (props: Props) => {
   return (
-      <div className="bg-primary flex flex-col items-center justify-center h-full gap-8 ">
+      <div className="bg-primary flex flex-col items-center justify-center h-104 gap-8 text-center">
           <h3 className="text-white text-4xl">
               Comments About
           </h3>

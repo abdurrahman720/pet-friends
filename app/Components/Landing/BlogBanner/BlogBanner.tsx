@@ -1,23 +1,23 @@
 import React from "react";
-import ReviewCarousel from "./ReviewCarousel";
+import blogVideo from "/public/assets/images/blogVideo.jpg";
 import Image from "next/image";
-import reviewImg from "/public/assets/images/review.jpg";
+import BannerText from "./BannerText";
 
 type Props = {};
 
-const Review = (props: Props) => {
+const BlogBanner = (props: Props) => {
   return (
     <div className="flex flex-col tabletXL:flex-row justify-center w-full h-full">
-      <div className="flex-1 h-104">
-        <ReviewCarousel />
-      </div>
       <div className="tabletXL:flex-1 h-64 tablet:h-104 ">
         <div className="relative h-full w-full">
-          <Image src={reviewImg} fill alt="review" className=" " />
+          <Image src={blogVideo} fill alt="review" className=" " />
         </div>
+      </div>
+      <div className="flex-1 ">
+        <BannerText />
       </div>
     </div>
   );
 };
 
-export default Review;
+export default BlogBanner;
